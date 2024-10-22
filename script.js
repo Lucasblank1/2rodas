@@ -39,3 +39,14 @@ $(document).ready(function() {
         $(this).addClass("caixa");
     });
 });
+
+$('.order').click(function(e) {
+    let button = $(this);
+
+    if (!button.hasclass('animate')) {
+        button.addclass('animate');
+        setTimeout(() => {
+            button.removeClass('animate');
+    }, 10000);    
+ }
+});
