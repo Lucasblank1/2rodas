@@ -40,13 +40,13 @@ $(document).ready(function() {
     });
 });
 
-$('.order').click(function(e) {
+$('.order').click(function() {
     let button = $(this);
 
-    if (!button.hasclass('animate')) {
-        button.addclass('animate');
+    if (!button.hasClass('animate')) {
+        button.addClass('animate');
         setTimeout(() => {
             button.removeClass('animate');
-    }, 10000);    
- }
+        }, 10000);    
+    }
 });
